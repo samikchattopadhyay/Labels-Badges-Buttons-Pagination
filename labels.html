@@ -1,0 +1,150 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+            h4 {margin: 5px 0; }
+            *,html {font-family: Arial, Verdana; }
+            html{font-size: 12px;}
+            .badge {
+                font-size: 10px; 
+                text-shadow: none; 
+                font-weight: normal; 
+                line-height: 19px;
+                -moz-border-radius: 50px; 
+                -webkit-border-radius: 50px; 
+                border-radius: 50px; 
+                padding-left: 9px;
+                padding-right: 9px;
+                background-color: #999999;
+                color: #FFFFFF;
+                display: inline-block;
+                vertical-align: baseline;
+                white-space: nowrap;
+            }
+            .label {
+                border-radius: 0 0 0 0;
+                font-size: 10px;
+                font-weight: normal;
+                padding: 2px 5px;
+                text-shadow: none;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                display: inline-block;
+                line-height: 14px;
+                vertical-align: baseline;
+                white-space: nowrap;
+            }
+            .label-default, .badge-default {
+                background-color: #999999;
+            }
+            .label-success, .badge-success {
+                background-color: #468847;
+            }
+            .label-warning, .badge-warning {
+                background-color: #F89406;
+            }
+            .label-important, .badge-important {
+                background-color: #B94A48;
+            }
+            .label-info, .badge-info {
+                background-color: #3A87AD;
+            }
+            .label-inverse, .badge-inverse {
+                background-color: #333333;
+            }
+            .btn {
+                border-color: #BBBBBB;
+                box-shadow: none;
+                display: inline-block;
+                margin-bottom: 5px;
+                background: none repeat scroll 0 0 #EEEEEE;
+                font-size: 13px;
+                padding: 5px 12px;
+                text-shadow: none;
+                -moz-border-bottom-colors: none;
+                -moz-border-left-colors: none;
+                -moz-border-right-colors: none;
+                -moz-border-top-colors: none;
+                border-image: none;
+                border-radius: 0 0 0 0;
+                border-style: solid;
+                border-width: 1px;
+                color: #333333;
+                cursor: pointer;
+                line-height: 20px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            button {
+                font-family: 'RobotoRegular','Helvetica Neue',Helvetica,sans-serif;
+                outline: medium none;
+                font-weight: normal;
+            }
+            .btn-primary, .btn-primary:link {
+                background: none repeat scroll 0 0 #0866C6;
+                border-color: #0A6BCE;
+                color: #FFFFFF;
+            }
+            .btn-danger, .btn-danger:link {
+                background: none repeat scroll 0 0 #DD0000;
+                border-color: #AA0000;
+                color: #FFFFFF;
+            }
+            .btn-warning, .btn-warning:link {
+                background: none repeat scroll 0 0 #FCB904;
+                border-color: #DAA004;
+            }
+
+            .pagination{margin:20px 0;}
+            .pagination ul{display:inline-block;*display:inline;*zoom:1;margin-left:0;margin-bottom:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.05);-moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.05);box-shadow:0 1px 2px rgba(0, 0, 0, 0.05);margin: 0;padding: 0;}
+            .pagination ul>li{display:inline;}
+            .pagination ul>li>a,.pagination ul>li>span{float:left;padding:4px 12px;line-height:20px;text-decoration:none;background-color:#ffffff;border:1px solid #dddddd;border-left-width:0;}
+            .pagination ul>li>a:hover,.pagination ul>li>a:focus,.pagination ul>.active>a,.pagination ul>.active>span{background-color:#f5f5f5;}
+            .pagination ul>.active>a,.pagination ul>.active>span{color:#999999;cursor:default;}
+            .pagination ul>.disabled>span,.pagination ul>.disabled>a,.pagination ul>.disabled>a:hover,.pagination ul>.disabled>a:focus{color:#999999;background-color:transparent;cursor:default;}
+            .pagination ul>li:first-child>a,.pagination ul>li:first-child>span{border-left-width:1px;-webkit-border-top-left-radius:0;-moz-border-radius-topleft:0;border-top-left-radius:0;-webkit-border-bottom-left-radius:0;-moz-border-radius-bottomleft:0;border-bottom-left-radius:0;}
+            .pagination ul>li:last-child>a,.pagination ul>li:last-child>span{-webkit-border-top-right-radius:0;-moz-border-radius-topright:0;border-top-right-radius:0;-webkit-border-bottom-right-radius:0;-moz-border-radius-bottomright:0;border-bottom-right-radius:0;}
+
+        </style>
+    </head>
+
+    <body>
+        <h4 class="subtitle2">Labels</h4>
+        <span class="label label-default">Default</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-important">Important</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-inverse">Inverse</span>
+        <br>
+        <br>
+        <h4 class="subtitle2">Badges</h4>
+        <span class="badge">1</span>
+        <span class="badge badge-success">2</span>
+        <span class="badge badge-warning">3</span>
+        <span class="badge badge-important">4</span>
+        <span class="badge badge-info">5</span>
+        <span class="badge badge-inverse">6</span>
+        <br>
+        <br>
+        <h4 class="subtitle2">Buttons</h4>
+        <button class="btn">Default</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-warning">Warning</button>
+        <br>
+        <br>
+        <h4 class="subtitle2">Pagination</h4>
+        <div class="pagination">
+            <ul>
+                <li class="disabled"><a>Previous</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
